@@ -1,0 +1,21 @@
+[theme]
+primaryColor = "#269795"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730"
+font = "sans serif"
+
+[server]
+headless = true
+
+[client]
+toolbarMode = "minimal"
+
+[global]
+pageTitle = "Pureprofile Postcode-Heatmap"
+
+
+
+[browser]
+gatherUsageStats = false
+favicon = "pureprofile_favicon.ico"
