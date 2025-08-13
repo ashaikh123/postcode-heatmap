@@ -11,13 +11,28 @@ import random
 
 # ------------------- App Logo -------------------
 logo_path = os.path.join(os.path.dirname(__file__), "pureprofile_logo.png")
-st.write("Logo exists?", os.path.exists(logo_path))
 st.image(logo_path, width=200)
 
 
 # ------------------- App Title -------------------
 st.title("📍 Postcode Heatmap Generator")
 
+# --- Custom Styling ---
+st.markdown("""
+    <style>
+    /* Change primary button hover color */
+    .stButton>button:hover {
+        background-color: #269795 !important;
+        color: white !important;
+    }
+
+    /* Optional: match primary color on active buttons */
+    .stButton>button:focus {
+        background-color: #269795 !important;
+        color: white !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 
 # ------------------- Country Selection -------------------

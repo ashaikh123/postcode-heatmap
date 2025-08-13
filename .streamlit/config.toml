@@ -13,9 +13,3 @@ toolbarMode = "minimal"
 
 [global]
 pageTitle = "Pureprofile Postcode-Heatmap"
-
-
-
-[browser]
-gatherUsageStats = false
-favicon = "pureprofile_favicon.ico"
