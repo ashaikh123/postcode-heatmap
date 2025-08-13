@@ -9,6 +9,12 @@ import os
 from collections import defaultdict
 import random
 
+# ------------------- App Logo -------------------
+logo_path = os.path.join(os.path.dirname(__file__), "pureprofile_logo.png")
+st.write("Logo exists?", os.path.exists(logo_path))
+st.image(logo_path, width=200)
+
+
 # ------------------- App Title -------------------
 st.title("📍 Postcode Heatmap Generator")
 
