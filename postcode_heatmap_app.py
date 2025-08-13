@@ -9,10 +9,24 @@ import os
 from collections import defaultdict
 import random
 
+# ------------------- App page title -------------------
+st.set_page_config(
+    page_title="Pureprofile Heatmap",
+    page_icon="🗺️"  # Temporary icon until we set a custom one
+)
+
+
+
 # ------------------- App Logo -------------------
 logo_path = os.path.join(os.path.dirname(__file__), "pureprofile_logo.png")
+favicon_path = os.path.join(os.path.dirname(__file__), "favicon.png")
 st.image(logo_path, width=200)
 
+
+st.set_page_config(
+    page_title="Pureprofile Heatmap",
+    page_icon="favicon.png"
+)
 
 # ------------------- App Title -------------------
 st.title("📍 Postcode Heatmap Generator")
@@ -20,19 +34,20 @@ st.title("📍 Postcode Heatmap Generator")
 # --- Custom Styling ---
 st.markdown("""
     <style>
-    /* Change primary button hover color */
-    .stButton>button:hover {
+    /* Style for file uploader browse button */
+    section[data-testid="stFileUploader"] button {
         background-color: #269795 !important;
         color: white !important;
+        border: none;
     }
 
-    /* Optional: match primary color on active buttons */
-    .stButton>button:focus {
-        background-color: #269795 !important;
+    section[data-testid="stFileUploader"] button:hover {
+        background-color: #1f7c7e !important;
         color: white !important;
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 # ------------------- Country Selection -------------------
